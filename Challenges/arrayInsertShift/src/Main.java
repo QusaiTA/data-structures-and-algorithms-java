@@ -25,6 +25,7 @@ public class Main {
                 newArr[i] = arr[i];
             }
         }
+
         return newArr;
     }
 
