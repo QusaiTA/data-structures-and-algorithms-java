@@ -1,3 +1,3 @@
 # Challenge 2 array-insert-shift
 
-![WhiteBoard](whiteboard2.png)
+![WhiteBoard](whiteBoard2.png)
