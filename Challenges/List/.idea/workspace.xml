@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f5af186-8695-4135-8d40-6bc074609f02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrayInsertShift/out/production/arrayInsertShift/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arrayInsertShift/out/production/arrayInsertShift/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrayInsertShift/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arrayInsertShift/src/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../arrayInsertShift/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../arrayInsertShift/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../reverse-array/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reverse-array/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../arrayInsertShift/.idea/workspace.xml" beforeDir="false" />
@@ -24,6 +27,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../arrayInsertShift" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -61,5 +65,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
