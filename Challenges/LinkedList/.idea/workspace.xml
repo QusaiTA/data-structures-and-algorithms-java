@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f0b486-38e6-46e8-a854-91a28e7e2e60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/linkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/Library.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/LinkListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/demo/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/data/LinkListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/data/LinkedListNode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/structer/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/structure/LinkedList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/demo/LibraryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/demo/LinkListNodeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/java/demo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/demo/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../arrayInsertShift/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
