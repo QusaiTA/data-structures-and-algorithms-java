@@ -3,13 +3,59 @@
  */
 package demo;
 
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.*;
 
-class LinkedListNodeTest {
-//    @Test
-//    void someLibraryMethodReturnsTrue() {
-//        LinkListNode classUnderTest = new LinkListNode();
-//        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
-//    }
+class LinkedListTest {
+
+    @Test
+    @DisplayName("retrun true if the insertion done")
+    public void isInserteDone() {
+    LinkedList list = new LinkedList();
+    list.insert("Qusai");
+    assertTrue(list.includes("Qusai"), "The method should return true to improve the inserting process");
+     }
+
+    @Test
+    @DisplayName("retrun true if the multiple insertion done")
+    public void insertMultinodes() {
+        LinkedList list = new LinkedList();
+        list.insert("Qusai");
+        list.insert("Mohammad");
+        list.insert("Loai");
+        assertTrue(list.includes("Qusai"), "The method should return true to improve the multiple insertion process");
+        assertTrue(list.includes("Mohammad"), "The method should return true to improve the multiple insertion process");
+        assertTrue(list.includes("Loai"), "The method should return true to improve the multiple insertion process");
+    }
+
+    @Test
+    @DisplayName("retrun true if the node existing")
+    public void findnodetrue() {
+        LinkedList list = new LinkedList();
+        list.insert("C");
+        assertTrue(list.includes("C"), "The method should return true  if the node existing");
+    }
+
+    @Test
+    @DisplayName("retrun false if the node not existing")
+    public void findnodefalse() {
+        LinkedList list = new LinkedList();
+        list.insert("C");
+        assertFalse(list.includes("A"), "The method should return false  if the node not existing");
+    }
+
+    @Test
+    @DisplayName("retrun existing collection of value")
+    public void returnCollection() {
+        LinkedList list = new LinkedList();
+        list.insert("A");
+        list.insert("B");
+        list.insert("C");
+        list.insert("D");
+        assertEquals(" Head -> A ->  B ->  C ->  D ->  Null", list.toString(),"");
+    }
+
 
 }
