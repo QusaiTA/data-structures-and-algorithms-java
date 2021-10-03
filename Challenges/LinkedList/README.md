@@ -16,3 +16,8 @@ a value**
 - for insert method i took tha approach that have a bigO(n) for time
 - for includes method i took tha approach that have a bigO(n) for time
 - for print method i took tha approach that have a bigO(n) for time
+
+
+## WhiteBoard
+
+![WhiteBoard](linkedlistWhiteBoard.png)
