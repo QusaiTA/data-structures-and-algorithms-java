@@ -56,6 +56,32 @@ class LinkedListTest {
         list.insert("D");
         assertEquals(" Head -> A ->  B ->  C ->  D ->  Null", list.toString(),"");
     }
+    @Test
+    @DisplayName("retrun collection of value AFTER add values with AFTER Method")
+    public void returnCollectionwithAfterMethod() {
+        LinkedList list = new LinkedList();
+        list.insert("A");
+        list.insert("B");
+        list.insert("C");
+        list.insert("D");
+        list.insert("K");
+        list.insertAfter("C","Q");
+        assertEquals(" Head -> A ->  B ->  C ->  Q -> D ->  Null", list.toString(),"");
+    }
+
+    @Test
+    @DisplayName("retrun collection of value AFTER add values with BEFORE Method")
+    public void returnCollectionwithBeforeMethod() {
+        LinkedList list = new LinkedList();
+        list.insert("A");
+        list.insert("B");
+        list.insert("C");
+        list.insert("D");
+        list.insert("K");
+        list.insertBefore("C","Q");
+        assertEquals(" Head -> A ->  B ->  Q->  C ->  D ->  Null", list.toString(),"");
+    }
+
 
 
 }

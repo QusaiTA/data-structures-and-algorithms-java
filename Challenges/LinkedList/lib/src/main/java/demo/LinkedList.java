@@ -1,58 +1,93 @@
 package demo;
 
-public class LinkedList {
+public class LinkedList<T> {
     private LinkedListNode head;
-    //LinkListNodeTest.java
-    //LinkedListNodeTest
 
-    public void insert(String addedNode){
+
+    public void insert(String addedNode) {
         int counter = 0;
-        if(head == null){
+        if (head == null) {
             LinkedListNode node = new LinkedListNode(addedNode);
             head = node;
 
-        }else {
+        } else {
             LinkedListNode existingNode = head;
 
-            while (existingNode.getNext() != null){
+            while (existingNode.getNext() != null) {
                 existingNode = existingNode.getNext();
             }
             LinkedListNode newNode = new LinkedListNode(addedNode);
             existingNode.setNext(newNode);
-            counter ++;
+            counter++;
             System.out.println(counter);
         }
     }
 
-    public String datatoString(){
-      String linkedList = " Head -> ";
-      LinkedListNode node = head;
-      while(node != null){
-          linkedList += node.getData() + " ->  ";
-          node = node.getNext();
-      }
+    public String datatoString() {
+        String linkedList = " Head -> ";
+        LinkedListNode node = head;
+        while (node != null) {
+            linkedList += node.getData() + " ->  ";
+            node = node.getNext();
+        }
 
 
-
-      return linkedList + "Null" ;
+        return linkedList + "Null";
 
 
     }
 
-   public boolean includes(String data){
+    public boolean includes(String data) {
         LinkedListNode node = head;
-        while (node != null){
-            if(node.getData() == data) {
+        while (node != null) {
+            if (node.getData() == data) {
                 return true;
             } else {
                 node = node.getNext();
             }
         }
-       return false;
+        return false;
     }
 
+    public void insertAfter(String newVal, String currentVal) {
+        LinkedListNode newNode = new LinkedListNode(newVal);
+
+        LinkedListNode current = head;
+
+        while (current != null) {
+            if (current.getData().equals(currentVal)) {
+                newNode.setNext(current.getNext());
+                current.setNext(newNode);
+                break;
+            } else {
+                current = current.getNext();
+            }
+        }
+    }
+    public void insertBefore(String reference, String data)
+    {
+        LinkedListNode current = head;
+        LinkedListNode previous = current;
+
+        while( current != null )
+        {
+            if( current.getData().equals(reference) )
+            {
+                LinkedListNode n = new LinkedListNode(data);
+                n.setNext (current);
+                previous.setNext(n);
+                break;
+            }
+            previous = current;
+            current = current.getNext();
+        }
+    }
+
+
+
+
     @Override
-    public String toString() {
+    public String toString () {
         return datatoString();
     }
 }
