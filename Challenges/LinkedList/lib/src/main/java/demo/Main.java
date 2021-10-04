@@ -8,9 +8,13 @@ public class Main {
         linkedList.insert("Qusai");
         linkedList.insert("A");
         linkedList.insert("I");
-        linkedList.insertAfter("Q","U");
-        linkedList.insertBefore("Qusai","Khair");
+        linkedList.insertAfter("G","Q");
+        linkedList.insertBefore("Qusai","Ahmad");
         linkedList.insertAfter("C","A");
+        System.out.println("Hi");
+        linkedList.printNthFromEnd(3);
+        System.out.println(linkedList);
+
 
 
 
