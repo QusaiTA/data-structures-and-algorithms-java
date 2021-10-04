@@ -81,6 +81,19 @@ class LinkedListTest {
         list.insertBefore("C","Q");
         assertEquals(" Head -> A ->  B ->  Q->  C ->  D ->  Null", list.toString(),"");
     }
+    @Test
+    @DisplayName("retrun the node with the given index")
+    public void returnNodeFromTheLast() {
+        LinkedList list = new LinkedList();
+        list.insert("A");
+        list.insert("B");
+        list.insert("C");
+        list.insert("D");
+        list.insert("K");
+
+
+        assertEquals("B", list.printNthFromEnd(3).getData());
+    }
 
 
 
