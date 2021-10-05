@@ -7,6 +7,9 @@
     <list default="true" id="e2f0b486-38e6-46e8-a854-91a28e7e2e60" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/demo/LinkedListNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/demo/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/demo/LinkedList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/lib/src/main/java/demo" />
-    <property name="last_opened_file_path" value="$USER_HOME$/401/java-fundamentals/inheritance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -67,7 +70,7 @@
       <recent name="C:\Users\STUDENT\data-structures-and-algorithms-java\Challenges\linkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Gradle.LinkedListTest">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
