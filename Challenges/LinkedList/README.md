@@ -18,10 +18,18 @@ a value**
 - for print method i took tha approach that have a bigO(n) for time
 
 
-## WhiteBoard
+## insert After WhiteBoard
 
-![WhiteBoard](linkedlistWhiteBoard.png)
+![WhiteBoard](insertAfter.png)
+
+## insert Before WhiteBoard
+
+![WhiteBoard](insertBefore.png)
 
 ## Kth WhiteBoard
 
 ![WhiteBoard](Kth.png)
+
+## ZipList WhiteBoard
+
+![WhiteBoard](ziplistwhiteboard.png)
