@@ -4,8 +4,11 @@ public class LinkedList<T> {
     private LinkedListNode head;
 
 
-    public void insert(String addedNode) {
-        int counter = 0;
+    public int length;
+
+
+    public void append(String addedNode) {
+
         if (head == null) {
             LinkedListNode node = new LinkedListNode(addedNode);
             head = node;
@@ -18,8 +21,21 @@ public class LinkedList<T> {
             }
             LinkedListNode newNode = new LinkedListNode(addedNode);
             existingNode.setNext(newNode);
-            counter++;
-            System.out.println(counter);
+            length++;
+
+        }
+
+    }
+
+    public void insert(String value) {
+        if (head == null) {
+            head = new LinkedListNode(value);
+            length++;
+        } else {
+            LinkedListNode newNode = new LinkedListNode(value);
+            newNode.setNext(head);
+            head = newNode;
+            length++;
         }
     }
 
@@ -64,17 +80,15 @@ public class LinkedList<T> {
             }
         }
     }
-    public void insertBefore(String reference, String data)
-    {
+
+    public void insertBefore(String reference, String data) {
         LinkedListNode current = head;
         LinkedListNode previous = current;
 
-        while( current != null )
-        {
-            if( current.getData().equals(reference) )
-            {
+        while (current != null) {
+            if (current.getData().equals(reference)) {
                 LinkedListNode n = new LinkedListNode(data);
-                n.setNext (current);
+                n.setNext(current);
                 previous.setNext(n);
                 break;
             }
@@ -83,32 +97,57 @@ public class LinkedList<T> {
         }
     }
 
-    public LinkedListNode printNthFromEnd(int value)
-    {
+    public LinkedListNode printNthFromEnd(int value) {
         int length = 0;
         LinkedListNode searchingNode = head;
-        while (searchingNode.getNext() != null)
-        {
+        while (searchingNode.getNext() != null) {
             searchingNode = searchingNode.getNext();
             length++;
         }
         if (length < value) {
-            System.out.println("list is empty");;
+            System.out.println("list is empty");
+            ;
         }
         searchingNode = head;
         for (int i = 1; i < length - value + 1; i++) {
             searchingNode = searchingNode.getNext();
         }
-        System.out.println(value+"th node from the end is "+searchingNode.getData());
+        System.out.println(value + "th node from the end is " + searchingNode.getData());
 
         return searchingNode;
     }
 
+    public String zipList(LinkedList list1, LinkedList list2) {
+
+        LinkedList newLinkedList = new LinkedList();
+        LinkedListNode node1 = list1.head;
+        LinkedListNode node2 = list2.head;
 
 
+        int biggerLength = list1.length + list2.length;
+
+        while (biggerLength > 0) {
+
+            if (node1 != null) {
+
+                newLinkedList.append(node1.getData());
+                node1 = node1.getNext();
+            }
+            if (node2 != null) {
+                newLinkedList.append(node2.getData());
+                node2 = node2.getNext();
+            }
+            biggerLength--;
+        }
+
+
+        return newLinkedList.toString();
+    }
 
     @Override
-    public String toString () {
+    public String toString() {
         return datatoString();
     }
+
+
 }
