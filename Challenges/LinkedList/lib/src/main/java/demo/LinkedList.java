@@ -105,7 +105,7 @@ public class LinkedList<T> {
             length++;
         }
         if (length < value) {
-            System.out.println("list is empty");
+            System.out.println("exception, node out of the range");
             ;
         }
         searchingNode = head;

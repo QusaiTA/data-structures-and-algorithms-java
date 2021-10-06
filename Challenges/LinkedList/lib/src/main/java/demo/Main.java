@@ -8,12 +8,16 @@ public class Main {
         linkedList1.append("3");
         linkedList1.append("4");
         linkedList1.append("5");
+        linkedList1.append("11");
+        linkedList1.append("12");
+
+
 
 //        linkedList.insertAfter("G","Q");
 //        linkedList.insertBefore("Qusai","Ahmad");
 //        linkedList.insertAfter("C","A");
 ////        System.out.println("Hi");
-//        linkedList.printNthFromEnd(3);
+        linkedList1.printNthFromEnd(3);
 //        System.out.println(linkedList);
 
 
