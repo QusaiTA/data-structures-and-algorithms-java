@@ -40,6 +40,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/lib/src/test/java/demo/LinkedList.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/demo/LinkedList.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/demo/LinkedListNode.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/lib/src/main/java/demo/Main.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1yrfKgOQpx3KckM9Y1vvtV3tEP0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,7 +70,7 @@
       <recent name="C:\Users\STUDENT\data-structures-and-algorithms-java\Challenges\linkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LinkedListTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
