@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f0b486-38e6-46e8-a854-91a28e7e2e60" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/gradlew" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/gradlew.bat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/build.gradle" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/StackNode.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/test/java/queueAndStack/LibraryTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../queueAndStack/settings.gradle" afterDir="false" />
     </list>
