@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demo.LinkedListTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-10-05T16:07:59" hostname="LTUCSTUDENT-L12" time="0.056">
+  <properties/>
+  <testcase name="retrun true if the insertion done" classname="demo.LinkedListTest" time="0.023"/>
+  <testcase name="retrun false if the node not existing" classname="demo.LinkedListTest" time="0.002"/>
+  <testcase name="retrun existing collection of value" classname="demo.LinkedListTest" time="0.012"/>
+  <testcase name="retrun collection of value AFTER add values with AFTER Method" classname="demo.LinkedListTest" time="0.0"/>
+  <testcase name="return the zipped List" classname="demo.LinkedListTest" time="0.001"/>
+  <testcase name="retrun true if the node existing" classname="demo.LinkedListTest" time="0.001"/>
+  <testcase name="retrun true if the multiple insertion done" classname="demo.LinkedListTest" time="0.001"/>
+  <testcase name="retrun the node with the given index" classname="demo.LinkedListTest" time="0.009"/>
+  <testcase name="retrun collection of value AFTER add values with BEFORE Method" classname="demo.LinkedListTest" time="0.001"/>
+  <system-out><![CDATA[3th node from the end is B
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

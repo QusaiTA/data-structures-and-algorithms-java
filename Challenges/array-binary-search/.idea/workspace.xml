@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25624d57-ba0e-4925-ad80-bdf0aa849059" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../List/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrayInsertShift/out/production/arrayInsertShift/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arrayInsertShift/out/production/arrayInsertShift/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrayInsertShift/src/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../arrayInsertShift/src/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../arrayInsertShift/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../arrayInsertShift/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reverse-array/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../reverse-array/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../arrayInsertShift/.idea/workspace.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1ymTIGLMScXaaj8FwUS4sBje8fx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/401/java-fundamentals/basiclibrary" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\STUDENT\data-structures-and-algorithms-java\Challenges\array-binary-search" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="array-binary-search" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25624d57-ba0e-4925-ad80-bdf0aa849059" name="Changes" comment="" />
+      <created>1632855684309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1632855684309</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

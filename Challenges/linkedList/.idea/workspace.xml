@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2f0b486-38e6-46e8-a854-91a28e7e2e60" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Library.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/test/java/queueAndStack/LibraryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../queueAndStack/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/PesudoQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queueAndStack/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../queueAndStack/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queueAndStack/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../queueAndStack/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/main/java/queueAndStack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../queueAndStack/lib/src/test/java/queueAndStack/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../queueAndStack/lib/src/test/java/queueAndStack/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/lib/src/main/java/demo" />
-    <property name="last_opened_file_path" value="$USER_HOME$/quotes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
