@@ -35,5 +35,23 @@ public class Main {
         System.out.println(queue.dequeue());
         System.out.println(queue.dequeue());
 
+
+        PesudoQueue MultiStack = new PesudoQueue();
+        System.out.println("1- pushing => " + MultiStack.enQueue("Q"));
+        System.out.println("2- pushing => " + MultiStack.enQueue("U"));
+        System.out.println("3- pushing => " + MultiStack.enQueue("S"));
+        System.out.println("4- pushing => " + MultiStack.enQueue("A"));
+        System.out.println("5- pushing => " + MultiStack.enQueue("I"));
+
+        System.out.println("*************************************************");
+
+        System.out.println("1- poping => " + MultiStack.deQueue());
+        System.out.println("2- poping => " + MultiStack.deQueue());
+        System.out.println("3- poping => " + MultiStack.deQueue());
+        System.out.println("4- poping => " + MultiStack.deQueue());
+        System.out.println("5- poping => " + MultiStack.deQueue());
+
+
+
     }
 }

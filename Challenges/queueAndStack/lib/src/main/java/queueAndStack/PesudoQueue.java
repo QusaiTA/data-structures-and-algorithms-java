@@ -1,6 +1,6 @@
 package queueAndStack;
 
-public class PesudoStack {
+public class PesudoQueue {
 
     Stack firstStack = new Stack();
     Stack secondStack = new Stack();

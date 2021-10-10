@@ -161,4 +161,33 @@ class LibraryTest {
         assertEquals("Queue is empty",queue.peek());
         assertEquals("Queue is empty",queue.dequeue());
     }
+
+    @Test
+    @DisplayName("PseudoQueue Test")
+    public void Pseudo(){
+     PesudoQueue multiStack = new PesudoQueue();
+     multiStack.enQueue("A");
+     multiStack.enQueue("B");
+     multiStack.enQueue("C");
+     multiStack.enQueue("D");
+     multiStack.enQueue("E");
+
+     Queue queue = new Queue();
+     queue.enqueue("A");
+     queue.enqueue("B");
+     queue.enqueue("C");
+     queue.enqueue("D");
+     queue.enqueue("E");
+
+     multiStack.deQueue();
+     multiStack.deQueue();
+     multiStack.deQueue();
+
+     queue.dequeue();
+     queue.dequeue();
+     queue.dequeue();
+
+
+     assertEquals(multiStack.firstStack.peek(),queue.peek());
+    }
 }
