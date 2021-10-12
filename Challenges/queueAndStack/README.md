@@ -23,8 +23,13 @@ with all of their basic methods.**
 **i have used the most efficient approach that give me BigO(1)
 fot all of Stack and Queue methods.**
 
-## WhiteBoard
+## WhiteBoards
+
+**Psedu**
 ![WhiteBoard](Pseduo.png)
 
 ## Animals
 ![WhiteBoard](animals.png)
+
+## Brackets
+![WhiteBoard](BracketsStack.png)
