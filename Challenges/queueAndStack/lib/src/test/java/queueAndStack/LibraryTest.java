@@ -10,10 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryTest {
     Stack stack = new Stack();
     Queue queue = new Queue();
+    Library classUnderTest = new Library();
 
     @Test
     void someLibraryMethodReturnsTrue() {
-        Library classUnderTest = new Library();
+
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
 
@@ -222,5 +223,15 @@ class LibraryTest {
 
 
     }
+    @Test
+    @DisplayName("Test bracketsValidate")
+    public void testBracketsValidate() throws Exception {
+        assertFalse(Main.bracketsValidate("{(})"));
+        assertTrue(Main.bracketsValidate("{()}"));
+    }
+
+
+
+
 }
 
