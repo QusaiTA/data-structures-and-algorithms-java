@@ -1,7 +1,7 @@
 package queueAndStack;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("Hello");
 
         Stack stack = new Stack();
@@ -50,6 +50,22 @@ public class Main {
         System.out.println("3- poping => " + MultiStack.deQueue());
         System.out.println("4- poping => " + MultiStack.deQueue());
         System.out.println("5- poping => " + MultiStack.deQueue());
+
+        AnimalShelter animalShelter = new AnimalShelter();
+        animalShelter.enQueue(new Animals("cats"));
+        animalShelter.enQueue(new Animals("dogs"));
+
+        animalShelter.enQueue(new Animals("cats"));
+
+        System.out.println(animalShelter.deQueue("cats"));
+        System.out.println(animalShelter.deQueue("cats"));
+        System.out.println(animalShelter.deQueue("cats"));
+        System.out.println(animalShelter.deQueue("dogs"));
+        System.out.println(animalShelter.deQueue("dogs"));
+
+
+
+
 
 
 
