@@ -63,6 +63,8 @@ public class Main {
         System.out.println(animalShelter.deQueue("dogs"));
         System.out.println(animalShelter.deQueue("dogs"));
 
+        System.out.println(Main.bracketsValidate("[[{(qusai)}]]"));
+
 
 
 
@@ -70,4 +72,26 @@ public class Main {
 
 
     }
+
+    public static boolean bracketsValidate(String value) throws Exception {
+        StackGeneric<Character> brakets = new StackGeneric<>();
+
+        if(value.length() == 0){
+            return false;
+        }
+
+        for(int i = 0 ; i < value.length() ; i++){
+            if(value.charAt(i) == '{' || value.charAt(i) == '(' || value.charAt(i) == '['){
+                brakets.push(value.charAt(i));
+            } else if(value.charAt(i) == '}' && brakets.peek() == '{' ){
+                brakets.pop();
+            }else if(value.charAt(i) == ')' && brakets.peek() == '(' ){
+                brakets.pop();
+            }else if(value.charAt(i) == ']' && brakets.peek() == '[' ){
+                brakets.pop();
+            }
+        }
+        return brakets.isEmpty();
+    }
+
 }

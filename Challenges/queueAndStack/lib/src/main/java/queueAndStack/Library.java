@@ -4,7 +4,11 @@
 package queueAndStack;
 
 public class Library {
+
     public boolean someLibraryMethod() {
         return true;
     }
+
+
+
 }
