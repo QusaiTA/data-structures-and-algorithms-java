@@ -25,3 +25,6 @@ fot all of Stack and Queue methods.**
 
 ## WhiteBoard
 ![WhiteBoard](Pseduo.png)
+
+## Animals
+![WhiteBoard](animals.png)
