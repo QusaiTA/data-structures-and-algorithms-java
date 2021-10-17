@@ -40,4 +40,15 @@ class LibraryTest {
         assertEquals(13,node.getRightNode());
 
     }
+
+    @Test
+    @DisplayName("Test Maximum Value")
+    public void getMaximum(){
+
+        binarySearchTree.add(20);
+        binarySearchTree.add(4);
+        binarySearchTree.add(30);
+
+        assertEquals(30,binarySearchTree.maximumValue());
+    }
 }

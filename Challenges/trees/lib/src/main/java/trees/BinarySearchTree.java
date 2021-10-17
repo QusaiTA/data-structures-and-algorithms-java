@@ -62,15 +62,27 @@ public class BinarySearchTree<T extends Comparable<T>> {
     }
     private boolean contains( T key, Node<T> root )
     {
-        if( key == null )
+        if( root == null )
             return false;
-        int compareResult = key.compareTo( root.getData() );
+        int compareResult = key.compareTo(root.getData());
         if( compareResult < 0 )
-            return contains( key, root.getLeftNode() );
+            return contains( key, root.getLeftNode());
         else if( compareResult > 0 )
             return contains( key, root.getRightNode() );
         else
             return true; // Match
+    }
+
+    public Integer maximumValue() {
+        return maximumValue(root);
+    }
+
+    private Integer maximumValue(Node<T> node) {
+        if (node.getRightNode() != null) {
+            return maximumValue(node.getRightNode());
+        }
+        return  (Integer) node.getData();
+
     }
     @Override
     public String toString() {
