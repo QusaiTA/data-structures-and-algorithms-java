@@ -1,39 +1,46 @@
-//package trees;
-//
-//public class BinaryTree<T> {
-//
-//    private final Node<T> root;
-//
-//    public BinaryTree(Node<T> root) {
-//        this.root = root;
-//    }
-//
-//
-////    public BinaryTree(T rootData) {
-////        this.root = new Node<>(rootData);
-////    }
-//
-//    public boolean isEmpty(){
-//        return root == null;
-//    }
-//    // inOrder Traversal
-//    public void inOrderTraversal(){
-//        if(isEmpty()){
-//            return;
-//        }
-//        traversInorder(root);
-//    }
-//
-//    private void traversInorder(Node<T> root){
-//        if(root.getLeftNode() != null){
-//            traversInorder(root.getLeftNode());
-//        }
-//
-//        System.out.println(root.getData());
-//
-//        if(root.getRightNode() != null){
-//            traversInorder(root.getRightNode());
-//        }
-//    }
-//
-//}
+package trees;
+
+public class BinaryTree {
+
+    public Node root;
+
+    public BinaryTree() {
+        this.root = null;
+    }
+
+    public int getHeight(Node root)
+    {
+        if (root == null)
+            return 0;
+        else {
+            int leftHeight = getHeight(root.getLeftNode());
+            int rightHeight = getHeight(root.getRightNode());
+
+            if (leftHeight > rightHeight)
+                return (leftHeight + 1);
+            else
+                return (rightHeight + 1);
+        }
+    }
+    public void printCurrentLevelNodes(Node root, int level)
+    {
+        if (root == null)
+            return;
+        if (level == 1)
+            System.out.print(root.getData() + " ");
+        else if (level > 1) {
+            printCurrentLevelNodes(root.getLeftNode(), level - 1);
+            printCurrentLevelNodes(root.getRightNode(), level - 1);
+        }
+    }
+
+    public void printLevelOrderForNodes()
+    {
+        int height = getHeight(root);
+        for (int i = 1; i <= height; i++)
+            printCurrentLevelNodes(root, i);
+    }
+
+
+
+}
