@@ -11,6 +11,7 @@ class LibraryTest {
 
     BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
     Node<Integer> node = new Node<>();
+    BinaryTree binaryTree = new BinaryTree();
 
 
     @Test void someLibraryMethodReturnsTrue() {
@@ -51,4 +52,26 @@ class LibraryTest {
 
         assertEquals(30,binarySearchTree.maximumValue());
     }
+
+    @Test
+    @DisplayName("Test BreadthFirst Traversal")
+    public void breadthFirstTraversal(){
+
+        binaryTree.root = new Node(2);
+        binaryTree.root.leftNode = new Node(7);
+        binaryTree.root.rightNode = new Node(5);
+        binaryTree.root.leftNode.rightNode = new Node(6);
+        binaryTree.root.leftNode.leftNode = new Node(2);
+        binaryTree.root.rightNode.rightNode = new Node(9);
+        binaryTree.root.rightNode.rightNode.leftNode = new Node(4);
+        binaryTree.root.leftNode.rightNode.rightNode = new Node(11);
+        binaryTree.root.leftNode.rightNode.leftNode = new Node(5);
+        
+
+
+        assertEquals(4,binaryTree.getHeight(binaryTree.root));
+
+    }
+
+
 }

@@ -14,4 +14,8 @@ MaximumValue : Big O space of 1 (constant) and time of O(n) (linear).**
 
 
 ## WhiteBoard
+**Get Maximum Number**
 ![whiteBoard](max.png)
+
+**BreadthFirst traversal**
+![whiteBoard](breadthFirst.png)
