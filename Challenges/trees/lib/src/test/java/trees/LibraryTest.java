@@ -66,6 +66,7 @@ class LibraryTest {
         binaryTree.root.rightNode.rightNode.leftNode = new Node(4);
         binaryTree.root.leftNode.rightNode.rightNode = new Node(11);
         binaryTree.root.leftNode.rightNode.leftNode = new Node(5);
+        
 
 
         assertEquals(4,binaryTree.getHeight(binaryTree.root));
