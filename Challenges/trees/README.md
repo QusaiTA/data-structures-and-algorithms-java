@@ -13,5 +13,5 @@ MaximumValue : Big O space of 1 (constant) and time of O(n) (linear).**
 - MaximumValue return you a Maximum value in tree.
 
 
-## Solution Code :-
+## WhiteBoard
 ![whiteBoard](max.png)

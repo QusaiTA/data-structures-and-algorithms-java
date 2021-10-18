@@ -2,9 +2,9 @@ package trees;
 
 public class Node<T> {
 
-    private T data;
-    private Node<T> leftNode;
-    private Node<T> rightNode;
+    public T data;
+    public Node<T> leftNode;
+    public Node<T> rightNode;
 
     public Node() {
     }
