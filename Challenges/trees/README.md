@@ -19,3 +19,6 @@ MaximumValue : Big O space of 1 (constant) and time of O(n) (linear).**
 
 **BreadthFirst traversal**
 ![whiteBoard](breadthFirst.png)
+
+**K-Ary-Tree**
+![whiteBoard](karyTree.png)
