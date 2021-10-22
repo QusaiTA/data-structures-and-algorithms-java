@@ -12,50 +12,54 @@ class LibraryTest {
     BinarySearchTree<Integer> binarySearchTree = new BinarySearchTree<>();
     Node<Integer> node = new Node<>();
     BinaryTree binaryTree = new BinaryTree();
+    KaryTree<Integer> karyTree = new KaryTree<>(3);
 
 
-    @Test void someLibraryMethodReturnsTrue() {
+    @Test
+    void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+
     }
 
     @Test
     @DisplayName("Test empty tree")
-    public void testEmptyTree(){
+    public void testEmptyTree() {
         assertTrue(binarySearchTree.isEmpty());
     }
 
     @Test
     @DisplayName("Test tree with single root")
-    public void testSingleRoot(){
+    public void testSingleRoot() {
         binarySearchTree.add(10);
         assertTrue(binarySearchTree.contains(10));
     }
+
     @Test
     @DisplayName("add left and right node")
-    public void addLeftRight(){
+    public void addLeftRight() {
         binarySearchTree.add(10);
         binarySearchTree.add(13);
         binarySearchTree.add(8);
-        assertEquals(8,node.getLeftNode());
-        assertEquals(13,node.getRightNode());
+        assertEquals(8, node.getLeftNode());
+        assertEquals(13, node.getRightNode());
 
     }
 
     @Test
     @DisplayName("Test Maximum Value")
-    public void getMaximum(){
+    public void getMaximum() {
 
         binarySearchTree.add(20);
         binarySearchTree.add(4);
         binarySearchTree.add(30);
 
-        assertEquals(30,binarySearchTree.maximumValue());
+        assertEquals(30, binarySearchTree.maximumValue());
     }
 
     @Test
     @DisplayName("Test BreadthFirst Traversal")
-    public void breadthFirstTraversal(){
+    public void breadthFirstTraversal() {
 
         binaryTree.root = new Node(2);
         binaryTree.root.leftNode = new Node(7);
@@ -66,12 +70,13 @@ class LibraryTest {
         binaryTree.root.rightNode.rightNode.leftNode = new Node(4);
         binaryTree.root.leftNode.rightNode.rightNode = new Node(11);
         binaryTree.root.leftNode.rightNode.leftNode = new Node(5);
-        
 
 
-        assertEquals(4,binaryTree.getHeight(binaryTree.root));
+        assertEquals(4, binaryTree.getHeight(binaryTree.root));
 
     }
 
 
 }
+
+

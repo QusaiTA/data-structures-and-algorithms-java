@@ -1,7 +1,7 @@
 package trees;
 
 public class BinarySearchTree<T extends Comparable<T>> {
-
+    int sum =0;
     public Node<T> root;
 
     public void add(T data){
@@ -38,11 +38,11 @@ public class BinarySearchTree<T extends Comparable<T>> {
         if (isEmpty()) {
             return;
         }
-
         traverseInorder(root);
     }
 
     private void traverseInorder(Node<T> root) {
+
         if (root.getLeftNode() != null) { // traverse left
             traverseInorder(root.getLeftNode());
         }
@@ -51,6 +51,20 @@ public class BinarySearchTree<T extends Comparable<T>> {
         if (root.getRightNode() != null) { // traverse right
             traverseInorder(root.getRightNode());
         }
+    }
+
+
+    public int sumOdd(Node<T> node)
+    {
+        int sum = 0;
+        if(node != null)
+        {
+            if(((Integer)node.getData() % 2) != 0)
+                sum += (Integer)node.getData();
+            sum+=sumOdd(node.getLeftNode());
+            sum+=sumOdd(node.getRightNode());
+        }
+        return sum;
     }
     public boolean isEmpty(){
         return root == null;
