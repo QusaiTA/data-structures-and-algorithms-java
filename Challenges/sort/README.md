@@ -4,3 +4,6 @@
 
 ## insertion sort blog
 
+![BLOG](BLOG1.png)
+
+
