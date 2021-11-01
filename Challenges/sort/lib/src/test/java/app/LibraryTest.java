@@ -7,10 +7,22 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
-    @Test void someLibraryMethodReturnsTrue() {
+    @Test void testInsertionSort() {
         Library classUnderTest = new Library();
-        assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
+
         int [] arr = {13,3,4,7,8,20,32,1};
+        classUnderTest.insertionSort(arr);
         assertEquals(arr,classUnderTest.insertionSort(arr));
+    }
+
+    @Test void testMergeSort() {
+        Library classUnderTest = new Library();
+
+        int[] arr = {13, 3, 4, 7, 8, 20, 32, 1};
+        classUnderTest.mergeSort(arr);
+
+        for (int i = 0; i < arr.length -1; i++) {
+            assertTrue(arr[i] < arr[i+1],"true");
+        }
     }
 }
