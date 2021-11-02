@@ -4,6 +4,9 @@
 package app;
 
 import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
@@ -24,5 +27,13 @@ class LibraryTest {
         for (int i = 0; i < arr.length -1; i++) {
             assertTrue(arr[i] < arr[i+1],"true");
         }
+    }
+    @Test void TestQuickSort() {
+
+        Library classUnderTest = new Library();
+
+        int[] arr={1,7,3,-1,9,10};
+        classUnderTest.QuickSort(arr,0,arr.length-1);
+        assertEquals("[-1, 1, 3, 7, 9, 10]", Arrays.toString(arr));
     }
 }
