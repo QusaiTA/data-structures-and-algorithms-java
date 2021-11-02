@@ -19,5 +19,13 @@
 **Blog**
 ![BLOG](mergeSortblog.png)
 
+**White Board**
+![WhiteBoard](quick.png)
+
+## Merge sort blog
+
+**Blog**
+![BLOG](qucikBlog.png)
+
 
 

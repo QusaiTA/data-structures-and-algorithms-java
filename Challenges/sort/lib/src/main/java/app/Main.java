@@ -17,10 +17,12 @@ public class Main {
 //        System.out.println(Arrays.toString(library.insertionSort(arr)));
 //        System.out.println(Arrays.toString(library.insertionSort(arr2)));
 //        System.out.println(Arrays.toString(library.insertionSort(arr3)));
-        library.mergeSort(arr);
-        for( int i = 0 ; i < arr.length ; i++){
-            System.out.println(i+1 +"th result of merge sort => " + arr[i]);
-        }
+//        library.mergeSort(arr);
+//        for( int i = 0 ; i < arr.length ; i++){
+//            System.out.println(i+1 +"th result of merge sort => " + arr[i]);
+//        }
+        library.QuickSort(arr,0,arr.length-1);
+        System.out.println(Arrays.toString(arr));
 
     }
 }
