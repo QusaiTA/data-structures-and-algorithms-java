@@ -6,24 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("hello");
-//
-//        HashTable<String , Integer> hashTable = new HashTable<>();
-////        hashTable.add("Qusai" , 300);
-//        hashTable.add("Jamal" , 700);
-//        hashTable.add("Qusai" , 800);
-//        hashTable.add("Bashar" ,900);
-//        hashTable.add("Mohammed" , 1000);
-//        hashTable.add("Mahmoud" , 1500);
-//        hashTable.add("Ayoub" , 100);
-//        hashTable.add("Zain" , 200);
-//        hashTable.add("Marah" , 10);
-//        hashTable.add("Ruaa" , 3000);
-//        hashTable.add("Raghad" , 3000);
-//        hashTable.add("Razan" , 3000);
-//        System.out.println(hashTable);
-//        System.out.println(hashTable.hashCode("Qusai"));
-//        System.out.println(hashTable.contains("Mahmoud1"));
-
 
         HashTable<String, Integer> hashTable = new HashTable<>();
         hashTable.add("Ruaa", 300);
