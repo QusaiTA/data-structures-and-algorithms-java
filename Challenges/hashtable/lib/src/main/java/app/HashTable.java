@@ -107,7 +107,18 @@ public class HashTable<K,V> {
         return get(key) != null;
     }
 
-
+    public String repeatedWord(String statement){
+        HashTable<String , Integer> dictionary = new HashTable<>();
+        statement = statement.toLowerCase();
+        String[] words = statement.split("[\\p{Punct}\\\\s]+");
+        for (String word : words){
+            if( dictionary.contains(word))
+                return word;
+            else
+                dictionary.add(word,1);
+        }
+        return null;
+    }
     @Override
     public String toString() {
         return "HashTable{" +
