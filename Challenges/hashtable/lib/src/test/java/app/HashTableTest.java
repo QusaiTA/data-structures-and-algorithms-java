@@ -52,4 +52,31 @@ class HashTableTest {
 
         assertEquals(40,hashTable.get("Test4"));
     }
+
+
+    @Test
+    public void testRepeated(){
+        String testCaseString = "Hello my name is Qusai Hello Again";
+        String outPut = hashTable.repeatedWord(testCaseString);
+        assertEquals("hello" , outPut);
+    }
+
+
+    // Test with punctuation
+
+    @Test
+    public void testWithPunctuation(){
+        String testCaseString = "Hello, my, name. is Qusai Hello Again";
+        String outPut = hashTable.repeatedWord(testCaseString);
+        assertEquals("hello" , outPut);
+    }
+
+    // Test no repeated words
+
+    @Test
+    public void noRepeatedTest(){
+        String testCaseString = "Hello, my, name. is Qusai Again";
+        String outPut = hashTable.repeatedWord(testCaseString);
+        assertNull(outPut);
+    }
 }
