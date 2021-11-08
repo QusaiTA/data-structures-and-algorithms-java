@@ -3,7 +3,10 @@
  */
 package app;
 
+import app.BinaryTree.BinaryTree;
+
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class HashTable<K,V> {
@@ -110,7 +113,7 @@ public class HashTable<K,V> {
     public String repeatedWord(String statement){
         HashTable<String , Integer> dictionary = new HashTable<>();
         statement = statement.toLowerCase();
-        String[] words = statement.split("[\\p{Punct}\\\\s]+");
+        String[] words = statement.split("[\\p{Punct}\\s]+");
         for (String word : words){
             if( dictionary.contains(word))
                 return word;
@@ -119,6 +122,7 @@ public class HashTable<K,V> {
         }
         return null;
     }
+
     @Override
     public String toString() {
         return "HashTable{" +
