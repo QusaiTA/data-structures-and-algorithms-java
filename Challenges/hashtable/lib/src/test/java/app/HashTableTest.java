@@ -8,7 +8,10 @@ import app.BinaryTree.Node;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -94,7 +97,7 @@ class HashTableTest {
     @Test
     public void testInterSection(){
 
-        new Main();
+
         tree1 = new BinaryTree<>();
         tree2 = new BinaryTree<>();
 
@@ -120,7 +123,6 @@ class HashTableTest {
     @Test
     public void testNoInterSection(){
 
-        new Main();
         tree3 = new BinaryTree<>();
         tree4 = new BinaryTree<>();
 
@@ -138,7 +140,6 @@ class HashTableTest {
     @Test
     public void testEmptyTrees(){
 
-        new Main();
         tree5 = new BinaryTree<>();
         tree6 = new BinaryTree<>();
         Integer[] arr = Main.intersection(tree5,tree6);
@@ -146,4 +147,56 @@ class HashTableTest {
         Integer[] expectedArray = {};
         assertArrayEquals(expectedArray, arr);
     }
+
+    @Test
+    public void testLeftJoin(){
+        HashMap <String,String> table1 = new HashMap<>();
+        table1.put("fond", "enamored");
+        table1.put("wrath", "anger");
+        table1.put("flow", "jam");
+
+        HashMap <String,String> table2 = new HashMap<>();
+        table2.put("fond", "averse");
+        table2.put("wrath", "delight");
+        table2.put("flow", "test");
+
+        List <String> joinedTable = new ArrayList<>();
+        joinedTable.add("{wrath: anger, delight}");
+        joinedTable.add("{flow: jam, test}");
+        joinedTable.add("{fond: enamored, averse}");
+        assertEquals(joinedTable , Main.leftJoin(table1, table2));
+    }
+
+    @Test
+    public void testSomeLeftJoins(){
+        HashMap <String,String> table1 = new HashMap<>();
+        table1.put("fond", "enamored"); //
+        table1.put("wrath", "anger"); //
+        table1.put("diligent", "employed");
+        table1.put("outfit", "garb");
+        table1.put("guide", "usher");
+
+        HashMap <String,String> table2 = new HashMap<>();
+        table2.put("fond", "averse");
+        table2.put("wrath", "delight");
+        table2.put("flow", "jam");
+
+        List <String> joinedTable = new ArrayList<>();
+        joinedTable.add("{diligent: employed, null}");
+        joinedTable.add("{outfit: garb, null}");
+        joinedTable.add("{wrath: anger, delight}");
+        joinedTable.add("{guide: usher, null}");
+        joinedTable.add("{fond: enamored, averse}");
+        assertEquals(joinedTable ,  Main.leftJoin(table1, table2));
+    }
+    @Test
+    public void testEmptyHashMap(){
+        HashMap <String,String> table1 = new HashMap<>();
+        HashMap<String,String> table2 = new HashMap<>();
+
+        List <String> joinedTable = new ArrayList<>();
+        assertEquals(joinedTable , Main.leftJoin(table1, table2));
+
+    }
+
 }
