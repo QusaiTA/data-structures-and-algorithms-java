@@ -5,6 +5,7 @@ import app.BinaryTree.Node;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main {
@@ -58,6 +59,25 @@ public class Main {
         tree2.root.right.left.right = new Node<>(60);
 
         System.out.println(Arrays.toString(intersection(tree1, tree2)));
+
+        HashMap<String,String> hashMap1 = new HashMap<>();
+        hashMap1.put("fond", "enamored");
+        hashMap1.put("wrath", "anger");
+        hashMap1.put("diligent", "employed");
+        hashMap1.put("outfit", "garb");
+        hashMap1.put("guide", "usher");
+
+        HashMap<String,String> hashMap2 = new HashMap<>();
+
+        hashMap2.put("fond", "averse");
+        hashMap2.put("wrath", "delight");
+        hashMap2.put("diligent", "idle");
+        hashMap2.put("guide", "follow");
+        hashMap2.put("flow", "jam");
+
+
+        System.out.println(leftJoin(hashMap1 , hashMap2));
+
     }
 
     public static Integer[] intersection(BinaryTree<Integer> tree1, BinaryTree<Integer> tree2){
@@ -79,7 +99,18 @@ public class Main {
         return similarity.toArray( new Integer[0]);
 
     }
+//credit to stackOverFlow => https://stackoverflow.com/questions/25226416/how-to-join-two-hashmap-by-their-key
+public static List<String> leftJoin(HashMap<String,String> table1, HashMap <String,String>table2){
 
-
+    List<String> joinedTable = new ArrayList<>();
+    for(Object key : table1.keySet()){
+        if(table1.containsKey(key)){
+            joinedTable.add("{" + key +  ": " + table1.get(key)+ ", " + table2.get(key) + "}");
+        } else{
+            joinedTable.add("{" + key + ": " + table2.get(key) + ", " + null + "}");
+        }
     }
+    return joinedTable;
+}
+}
 

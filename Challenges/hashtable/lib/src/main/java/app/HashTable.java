@@ -24,6 +24,11 @@ public class HashTable<K,V> {
             bucketArray.add(null);
         }
     }
+
+    public int getNumBuckets() {
+        return numBuckets;
+    }
+
     public int hashCode(K key){
         return Objects.hashCode(key);
     }
@@ -108,6 +113,10 @@ public class HashTable<K,V> {
 
     public boolean contains(K key) {
         return get(key) != null;
+    }
+
+    public ArrayList<HashNode<K, V>> getBucketArray() {
+        return bucketArray;
     }
 
     public String repeatedWord(String statement){

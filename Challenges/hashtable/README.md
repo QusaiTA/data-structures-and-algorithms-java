@@ -9,3 +9,9 @@
 
 **White Board**
 ![WhiteBoard](interSection.png)
+
+## LeftJoin Challange
+
+**White Board**
+![WhiteBoard](leftJoin.png)
+
