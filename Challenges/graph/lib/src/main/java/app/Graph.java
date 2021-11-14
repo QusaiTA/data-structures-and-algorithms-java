@@ -38,6 +38,29 @@ public class Graph  <T> {
         return this.nodes.size();
     }
 
+    public List<T> BFV(T rootNode){
+        Queue<T> visitedNodes = new LinkedList<>();
+        Queue<T> listOfNodes = new LinkedList<>();
+        List<T> traversedNodes = new ArrayList<>();
+
+        listOfNodes.add(rootNode);
+        visitedNodes.add(rootNode);
+
+        while (!listOfNodes.isEmpty()){
+            T node = listOfNodes.remove();
+            traversedNodes.add(node);
+            for (T singleNode : getNeighbours(node)){
+                if (!visitedNodes.contains(singleNode)){
+                    visitedNodes.add(singleNode);
+                    listOfNodes.add(singleNode);
+                }
+            }
+        }
+        return traversedNodes;
+    }
+
+
+
     @Override
     public String toString() {
         return "Graph{" +

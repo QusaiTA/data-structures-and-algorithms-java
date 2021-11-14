@@ -21,7 +21,7 @@ class GraphTest {
         testGraph = new Graph<>();
 
         testGraph.addNode(15);
-        Assertions.assertEquals(1 , testGraph.getNodes().size());
+        assertEquals(1 , testGraph.getNodes().size());
     }
 
     /*
@@ -35,8 +35,8 @@ class GraphTest {
         testGraph.addNode(10);
         testGraph.addNode(20);
         testGraph.addEdge(10,20 ,5);
-        Assertions.assertEquals(1 , testGraph.getNeighbours(10).size());
-        Assertions.assertEquals(1 , testGraph.getNeighbours(20).size());
+        assertEquals(1 , testGraph.getNeighbours(10).size());
+        assertEquals(1 , testGraph.getNeighbours(20).size());
 
     }
 
@@ -49,7 +49,7 @@ class GraphTest {
 
         testGraph.addNode(10);
         testGraph.addNode(20);
-        Assertions.assertEquals(2 , testGraph.getNodes().size());
+        assertEquals(2 , testGraph.getNodes().size());
     }
 
     /*
@@ -63,7 +63,7 @@ class GraphTest {
         testGraph.addNode(10);
         testGraph.addNode(20);
         testGraph.addEdge(10 , 20 , 10);
-        Assertions.assertEquals(1 , testGraph.getNeighbours(10).size());
+        assertEquals(1 , testGraph.getNeighbours(10).size());
     }
 
     /*
@@ -77,7 +77,7 @@ class GraphTest {
         testGraph.addNode(10);
         testGraph.addNode(20);
         testGraph.addEdge(10 , 20 , 5);
-        Assertions.assertEquals(5 , testGraph.nodes.get(10).get(20));
+        assertEquals(5 , testGraph.nodes.get(10).get(20));
     }
 
     /*
@@ -90,7 +90,7 @@ class GraphTest {
 
         testGraph.addNode(12);
         testGraph.addEdge(12 , 12 , 1);
-        Assertions.assertNotNull(testGraph);
+        assertNotNull(testGraph);
     }
 
     /*
@@ -106,7 +106,7 @@ class GraphTest {
         testGraph.addNode(153);
         testGraph.addNode(152);
         testGraph.addEdge(151 ,  152 , 3);
-        Assertions.assertEquals(4 , testGraph.getSize());
+        assertEquals(4 , testGraph.getSize());
     }
 
     /*
@@ -117,6 +117,19 @@ class GraphTest {
     public void testEmpty(){
         testGraph = new Graph<>();
 
-        Assertions.assertEquals(0 , testGraph.nodes.size());
+        assertEquals(0 , testGraph.nodes.size());
+    }
+
+    @Test
+    public void testBFV(){
+
+        testGraph = new Graph<>();
+        testGraph.addNode(1);
+        testGraph.addNode(2);
+        testGraph.addNode(3);
+        testGraph.addEdge(1 , 2 ,0);
+        testGraph.addEdge(2 , 3 ,0);
+
+        assertEquals("[1, 2, 3]" , testGraph.BFV(1).toString());
     }
 }
