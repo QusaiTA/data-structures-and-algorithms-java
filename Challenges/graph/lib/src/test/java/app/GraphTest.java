@@ -132,4 +132,32 @@ class GraphTest {
 
         assertEquals("[1, 2, 3]" , testGraph.BFV(1).toString());
     }
+
+     /*
+    Business Trip test
+     */
+
+    @Test
+    public void testForEmpty(){
+        testGraph = new Graph<>();
+
+        String[] arr ={};
+        assertEquals("False, 0$" , testGraph.businessTrip(arr));
+    }
+    @Test
+    public void testBusinessTrip(){
+        Graph<String> testGraph = new Graph<>();
+        testGraph.addNode("loai");
+        testGraph.addNode("qusai");
+        testGraph.addNode("mohammad");
+        testGraph.addNode("testBusinessTrip");
+        testGraph.addEdge("loai" , "qusai" , 1);
+        testGraph.addEdge("loai" , "mohammad" , 2);
+        testGraph.addEdge("mohammad" , "loai" , 1);
+        testGraph.addEdge("qusai","testBusinessTrip",1);
+        testGraph.addEdge("mohammad","testBusinessTrip",1);
+
+        String[] arr = {"qusai","testBusinessTrip","mohammad"};
+        assertEquals("True, 2$" , testGraph.businessTrip(arr));
+    }
 }
