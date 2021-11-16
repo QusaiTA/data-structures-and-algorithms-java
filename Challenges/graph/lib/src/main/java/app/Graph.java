@@ -38,7 +38,7 @@ public class Graph  <T> {
         return this.nodes.size();
     }
 
-    public List<T> BFV(T rootNode){
+    public List<T> breadthFirst(T rootNode){
         Queue<T> visitedNodes = new LinkedList<>();
         Queue<T> listOfNodes = new LinkedList<>();
         List<T> traversedNodes = new ArrayList<>();
@@ -78,6 +78,26 @@ public class Graph  <T> {
         else {
             return "True, " + totalCost + "$";
         }
+    }
+
+
+    public Queue<T> depthFirst(T root){
+        Queue<T> visitedNode = new LinkedList<>();
+        Stack<T> stack = new Stack<>();
+        stack.push(root);
+
+        while (!stack.isEmpty()){
+            T node = stack.pop();
+            if (!visitedNode.contains(node)){
+                visitedNode.add(node);
+
+                for (T v: getNeighbours(node)) {
+                    stack.push(v);
+                }
+            }
+        }
+
+        return visitedNode;
     }
 
 
