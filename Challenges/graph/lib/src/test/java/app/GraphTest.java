@@ -130,7 +130,7 @@ class GraphTest {
         testGraph.addEdge(1 , 2 ,0);
         testGraph.addEdge(2 , 3 ,0);
 
-        assertEquals("[1, 2, 3]" , testGraph.BFV(1).toString());
+        assertEquals("[1, 2, 3]" , testGraph.breadthFirst(1).toString());
     }
 
      /*
@@ -160,4 +160,17 @@ class GraphTest {
         String[] arr = {"qusai","testBusinessTrip","mohammad"};
         assertEquals("True, 2$" , testGraph.businessTrip(arr));
     }
+    @Test
+    public void testDepthFirst(){
+        Graph<Integer> testGraph = new Graph<>();
+
+        testGraph.addNode(10);
+        testGraph.addNode(20);
+        testGraph.addNode(15);
+        testGraph.addNode(25);
+        testGraph.addEdge(10,15 ,5);
+        testGraph.addEdge(15,20 ,5);
+        testGraph.addEdge(20,25 ,5);
+        Assertions.assertEquals("[10, 15, 20, 25]" , testGraph.depthFirst(10).toString());
+}
 }
